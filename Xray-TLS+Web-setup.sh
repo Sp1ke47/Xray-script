@@ -2403,11 +2403,16 @@ http {
 
     sendfile        on;
     #tcp_nopush     on;
+    server_tokens  off;
 
     #keepalive_timeout  0;
     keepalive_timeout  65;
 
     #gzip  on;
+    brotli on;
+    brotli_comp_level 4;
+    brotli_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript application/javascript image/svg+xml;
+    brotli_min_length 64;
 
     include       $nginx_config;
     #server {
