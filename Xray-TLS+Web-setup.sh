@@ -17,7 +17,7 @@ unset cpu_thread_num
 unset timezone
 
 #安装配置信息
-nginx_version="nginx-1.23.0"
+nginx_version="nginx-1.23.1"
 openssl_version="openssl-openssl-3.0.5"
 nginx_prefix="/usr/local/nginx"
 nginx_config="${nginx_prefix}/conf.d/xray.conf"
